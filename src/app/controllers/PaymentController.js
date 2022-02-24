@@ -248,11 +248,10 @@ class PaymentController {
     //     fee: 0,
     //   });
     
-      const returnUrl = "https://gia-su-da-nang.herokuapp.com/received-classes";
-      res.status(301).redirect(returnUrl + "/?status=0&value=" + amount)
+      res.status(301).redirect("https://gia-su-da-nang.herokuapp.com/received-classes/?status=0&value=" + amount)
     }
     else{
-      res.status(301).redirect(returnUrl + "/?status=1")
+      res.status(301).redirect("https://gia-su-da-nang.herokuapp.com/received-classes/?status=1")
     }
     
   }
